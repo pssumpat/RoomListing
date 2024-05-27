@@ -10,8 +10,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:wght@300;400;500;600&display=swap');
 
     body {
-      background: rgb(34,193,195);
-      background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+      background: rgb(240 240 240);
+      
       }
     .hotel-card {
       margin-bottom: 20px;
@@ -57,6 +57,9 @@
     .filter-heading {
       font-size: 1.2rem;
     }
+    .card {
+    border: 1px solid rgb(0 0 0);
+    }
     .app-heading {
       font-family: "Major Mono Display", monospace;
       font-weight: 400;
@@ -86,16 +89,16 @@
 
   <script>
     const hotels = [
-      { id: 1, price: 1500, images: ['//Garima//R-ID-101H-C.jpg', '//Garima//R-ID-101H-1','//Garima//R-ID-101H-2','//Garima//R-ID-101H-3','//Garima//R-ID-101H-4'], contact: 'tel:+911234567890' },
-      { id: 2, price: 2500, images: ['//Garima//R-ID-101H-C.jpg', 'roomid2B.jpg'], contact: 'tel:+911234567891' },
-      { id: 3, price: 3500, images: ['roomid3A.jpg', 'roomid3B.jpg'], contact: 'tel:+911234567892' },
-      { id: 4, price: 1800, images: ['roomid4A.jpg', 'roomid4B.jpg'], contact: 'tel:+911234567893' },
-      { id: 5, price: 2800, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+911234567894' },
-      { id: 6, price: 4000, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+911234567895' },
-      { id: 7, price: 2200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+911234567896' },
-      { id: 8, price: 3200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+911234567897' },
-      { id: 9, price: 4200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+911234567898' },
-      { id: 10, price: 2800, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+911234567899' },
+      { id: 'HGP101', price: 3500, images: ['garima/R-ID-101H-C.jpeg', 'garima/R-ID-101H-1.jpeg','garima/R-ID-101H-2.jpeg','garima/R-ID-101H-3.jpeg','garima/R-ID-101H-4.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HGP202', price: 2300, images: ['garima/R-ID-202-1.jpeg', 'garima/R-ID-202-2.jpeg', 'garima/R-ID-202-3.jpeg', 'garima/R-ID-202-4.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HGP203', price: 3500, images: ['garima/R-ID-203-1.jpeg', 'garima/R-ID-203-2.jpeg', 'garima/R-ID-203-3.jpeg', 'garima/R-ID-203-4.jpeg'], contact: 'tel:+918517014333' },
+      { id: 4, price: 1800, images: ['roomid4A.jpg', 'roomid4B.jpg'], contact: 'tel:+918517014333' },
+      { id: 5, price: 2800, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
+      { id: 6, price: 4000, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
+      { id: 7, price: 2200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
+      { id: 8, price: 3200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
+      { id: 9, price: 4200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
+      { id: 10, price: 2800, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
       // ... add more sample data as needed up to 20 hotels
     ];
 
