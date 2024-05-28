@@ -92,9 +92,13 @@
       { id: 'HGP101', price: 3500, images: ['garima/R-ID-101H-C.jpeg', 'garima/R-ID-101H-1.jpeg','garima/R-ID-101H-2.jpeg','garima/R-ID-101H-3.jpeg','garima/R-ID-101H-4.jpeg'], contact: 'tel:+918517014333' },
       { id: 'HGP202', price: 2300, images: ['garima/R-ID-202-1.jpeg', 'garima/R-ID-202-2.jpeg', 'garima/R-ID-202-3.jpeg', 'garima/R-ID-202-4.jpeg'], contact: 'tel:+918517014333' },
       { id: 'HGP203', price: 3500, images: ['garima/R-ID-203-1.jpeg', 'garima/R-ID-203-2.jpeg', 'garima/R-ID-203-3.jpeg', 'garima/R-ID-203-4.jpeg'], contact: 'tel:+918517014333' },
-      { id: 4, price: 1800, images: ['roomid4A.jpg', 'roomid4B.jpg'], contact: 'tel:+918517014333' },
-      { id: 5, price: 2800, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
-      { id: 6, price: 4000, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
+      { id: 'HDK101', price: 3000, images: ['devKripa/R-ID-101-1.jpeg', 'devKripa/R-ID-101-2.jpeg','devKripa/R-ID-101-3.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'VHS101', price: 2600, images: ['vatsalya/R-ID-101-1.jpeg', 'vatsalya/R-ID-101-2.jpeg','vatsalya/R-ID-101-3.jpeg','vatsalya/R-ID-101-4.jpeg',], contact: 'tel:+918517014333' },
+      { id: 'VHS102', price: 2600, images: ['vatsalya/R-ID-102-1.jpeg', 'vatsalya/R-ID-102-2.jpeg','vatsalya/R-ID-102-3.jpeg','vatsalya/R-ID-101-4.jpeg',], contact: 'tel:+918517014333' },
+      { id: 'HBP101', price: 1800, images: ['barsana/R-ID-101-1.jpeg', 'barsana/R-ID-101-2.jpeg','barsana/R-ID-101-3.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HBP102', price: 1800, images: ['barsana/R-ID-102-1.jpeg', 'barsana/R-ID-102-2.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HBP103', price: 1800, images: ['barsana/R-ID-103-1.jpeg', 'barsana/R-ID-103-2.jpeg','barsana/R-ID-103-3.jpeg'], contact: 'tel:+918517014333' },
+
       { id: 7, price: 2200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
       { id: 8, price: 3200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
       { id: 9, price: 4200, images: ['https://via.placeholder.com/150/', 'https://via.placeholder.com/150/'], contact: 'tel:+918517014333' },
@@ -107,6 +111,7 @@
       return `
         <div class="col-md-4 hotel-card" data-price="${hotel.price}">
           <div class="card position-relative">
+            <div class="room-id">Room ID : ${hotel.id}</div>
             <div class="room-id">Room ID : ${hotel.id}</div>
             <div id="carousel${hotel.id}" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
