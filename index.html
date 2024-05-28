@@ -54,6 +54,26 @@
       z-index: 100;
       font-size: 14px;
     }
+    .occ-display{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+      z-index: 100;
+      font-size: 14px;
+    }
+    .rate-display{
+      position: absolute;
+      top: 10px;
+      right: 45px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+      z-index: 100;
+      font-size: 14px;
+    }
     .filter-heading {
       font-size: 1.2rem;
     }
@@ -89,17 +109,17 @@
 
   <script>
     const hotels = [
-      { id: 'HGP101', price: 3500, images: ['Garima/R-ID-101H-C.jpeg', 'Garima/R-ID-101H-1.jpeg','Garima/R-ID-101H-2.jpeg','Garima/R-ID-101H-3.jpeg','Garima/R-ID-101H-4.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'HGP202', price: 2300, images: ['Garima/R-ID-202-1.jpeg', 'Garima/R-ID-202-2.jpeg', 'Garima/R-ID-202-3.jpeg', 'Garima/R-ID-202-4.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'HGP203', price: 3500, images: ['Garima/R-ID-203-1.jpeg', 'Garima/R-ID-203-2.jpeg', 'Garima/R-ID-203-3.jpeg', 'Garima/R-ID-203-4.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'HDK101', price: 3000, images: ['devKripa/R-ID-101-1.jpeg', 'devKripa/R-ID-101-2.jpeg','devKripa/R-ID-101-3.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'VHS101', price: 2600, images: ['vatsalya/R-ID-101-1.jpeg', 'vatsalya/R-ID-101-2.jpeg','vatsalya/R-ID-101-3.jpeg','vatsalya/R-ID-101-4.jpeg',], contact: 'tel:+918517014333' },
-      { id: 'VHS102', price: 2600, images: ['vatsalya/R-ID-102-1.jpeg', 'vatsalya/R-ID-102-2.jpeg','vatsalya/R-ID-102-3.jpeg','vatsalya/R-ID-101-4.jpeg',], contact: 'tel:+918517014333' },
-      { id: 'HBP101', price: 1800, images: ['barsana/R-ID-101-1.jpeg', 'barsana/R-ID-101-2.jpeg','barsana/R-ID-101-3.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'HBP102', price: 1800, images: ['barsana/R-ID-102-1.jpeg', 'barsana/R-ID-102-2.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'HBP103', price: 1800, images: ['barsana/R-ID-103-1.jpeg', 'barsana/R-ID-103-2.jpeg','barsana/R-ID-103-3.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'HBP104', price: 1800, images: ['barsana/R-ID-104-1.jpeg', 'barsana/R-ID-104-2.jpeg','barsana/R-ID-104-3.jpeg'], contact: 'tel:+918517014333' },
-      { id: 'HBP105', price: 1800, images: ['barsana/R-ID-105-1.jpeg', 'barsana/R-ID-105-2.jpeg','barsana/R-ID-105-3.jpeg',,'barsana/R-ID-105-4.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HGP101', price: 3600,rate: 'TYZZ',occ:6, images: ['Garima/R-ID-101H-C.jpeg', 'Garima/R-ID-101H-1.jpeg','Garima/R-ID-101H-2.jpeg','Garima/R-ID-101H-3.jpeg','Garima/R-ID-101H-4.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HGP203', price: 2400,rate: 'DCZZ',occ:3, images: ['Garima/R-ID-203-1.jpeg', 'Garima/R-ID-203-2.jpeg', 'Garima/R-ID-203-3.jpeg', 'Garima/R-ID-203-4.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HGP202', price: 2300,rate: 'DTZZ',occ:3, images: ['Garima/R-ID-202-1.jpeg', 'Garima/R-ID-202-2.jpeg', 'Garima/R-ID-202-3.jpeg', 'Garima/R-ID-202-4.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HDK101', price: 3500,rate: 'TPZZ',occ:3, images: ['devKripa/R-ID-101-1.jpeg', 'devKripa/R-ID-101-2.jpeg','devKripa/R-ID-101-3.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'VHS101', price: 3200,rate: 'TDZZ',occ:4, images: ['vatsalya/R-ID-101-1.jpeg', 'vatsalya/R-ID-101-2.jpeg','vatsalya/R-ID-101-3.jpeg','vatsalya/R-ID-101-4.jpeg',], contact: 'tel:+918517014333' },
+      { id: 'VHS102', price: 2200,rate: 'DDZZ',occ:2, images: ['vatsalya/R-ID-102-1.jpeg', 'vatsalya/R-ID-102-2.jpeg','vatsalya/R-ID-102-3.jpeg','vatsalya/R-ID-101-4.jpeg',], contact: 'tel:+918517014333' },
+      { id: 'HBP101', price: 2300,rate: 'DTZZ',occ:3, images: ['barsana/R-ID-101-1.jpeg', 'barsana/R-ID-101-2.jpeg','barsana/R-ID-101-3.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HBP102', price: 2200,rate: 'DDZZ',occ:3, images: ['barsana/R-ID-102-1.jpeg', 'barsana/R-ID-102-2.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HBP103', price: 2100,rate: 'DEZZ',occ:3, images: ['barsana/R-ID-103-1.jpeg', 'barsana/R-ID-103-2.jpeg','barsana/R-ID-103-3.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HBP104', price: 2800,rate: 'DAZZ',occ:4, images: ['barsana/R-ID-104-1.jpeg', 'barsana/R-ID-104-2.jpeg','barsana/R-ID-104-3.jpeg'], contact: 'tel:+918517014333' },
+      { id: 'HBP105', price: 3800,rate: 'TAZZ',occ:6, images: ['barsana/R-ID-105-1.jpeg', 'barsana/R-ID-105-2.jpeg','barsana/R-ID-105-3.jpeg',,'barsana/R-ID-105-4.jpeg'], contact: 'tel:+918517014333' },
       // ... add more sample data as needed up to 20 hotels
     ];
 
@@ -108,8 +128,11 @@
       return `
         <div class="col-md-4 hotel-card" data-price="${hotel.price}">
           <div class="card position-relative">
-            <div class="room-id">Room ID : ${hotel.id}</div>
-            <div class="room-id">Room ID : ${hotel.id}</div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="room-id">Room ID : ${hotel.id} </div>
+              <div class="rate-display">${hotel.rate}</div>
+              <div class="occ-display">${hotel.occ}</div>
+            </div>
             <div id="carousel${hotel.id}" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 ${hotel.images.map((img, index) => `
